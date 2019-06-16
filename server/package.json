@@ -1,0 +1,21 @@
+{
+  "name": "ml",
+  "version": "1.0.0",
+  "description": "Backend application for ML model test",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "achraf bounane",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "csv-parser": "^2.3.0",
+    "express": "^4.17.1",
+    "ml-cart": "^1.0.8",
+    "ml-dataset-iris": "^1.0.0",
+    "ml-regression-multivariate-linear": "^2.0.1",
+    "multer": "^1.4.1"
+  }
+}

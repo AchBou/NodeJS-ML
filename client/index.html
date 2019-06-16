@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Car price prediction</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <form enctype="application/x-www-form-urlencoded" id="contact" action="" onsubmit="return false"  method="post">
+        <h3>Car price prediction</h3>
+        <h4>En tilisant régréssion linéaire multiple</h4>
+
+        <fieldset>
+          <label for="horsepower">Puissance en chevaux</label>
+          <input name="horsepower" placeholder="0-300" type="number" tabindex="1" required autofocus>
+        </fieldset>
+        <fieldset>
+          <label for="highway-mpg">Usage mpg en Autoroute</label>
+          <input name="highway-mpg" placeholder="10-60" type="number" tabindex="2" required>
+        </fieldset>
+        <fieldset>
+          <label for="engine-size">Taille du moteur</label>
+          <input name="engine-size" placeholder="50-350" type="number" tabindex="3" required>
+        </fieldset>
+        <fieldset>
+          <label for="curb-weight">Poids à vide</label>
+          <input name="curb-weight" placeholder="1000-4500" type="number" tabindex="4" required>
+        </fieldset>
+        <fieldset>
+          <button name="submit" type="submit" id="contact-submit" onclick="launch()">Submit</button>
+        </fieldset>
+      </form>
+
+      <div class="result-container">
+        The predicted Value is : <p id=result>  </p>
+      </div>
+    </div>
+
+  </body>
+</html>
